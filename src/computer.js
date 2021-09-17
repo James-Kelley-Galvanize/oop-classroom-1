@@ -5,6 +5,10 @@ class Computer {
     this.processor = processor;
     this.memory = memory;
     this.graphics = graphics;
+    this.on =false;
+  }
+  power(){
+    this.on = !this.on
   }
 }
 

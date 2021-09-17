@@ -1,7 +1,7 @@
 const expect = require('chai').expect
 const Marker = require('../src').Marker
 
-xdescribe('Marker', function () {
+describe('Marker', function () {
   before(function () {
     this.properties = [ 'medium', 'pink', 100 ]
   })
@@ -64,9 +64,9 @@ xdescribe('Marker', function () {
     it('if the marker runs out of ink, it can still write spaces', function () {
       const marker = new Marker(...this.properties)
       marker.remainingInk = 3
-      const actual = marker.write('hi there')
+      const actual = marker.write('hi ho hi ho')
 
-      expect(actual).to.equal('hi t')
+      expect(actual).to.equal('hi h  ')
     })
   })
 })

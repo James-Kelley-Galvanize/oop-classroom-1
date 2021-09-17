@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --watch"
   },
   "devDependencies": {
     "chai": "^3.5.0",
