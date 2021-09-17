@@ -67,6 +67,7 @@ describe('Marker', function () {
       const actual = marker.write('hi ho hi ho')
 
       expect(actual).to.equal('hi h  ')
+      expect (actual.length).to.equal(6)
     })
   })
 })
